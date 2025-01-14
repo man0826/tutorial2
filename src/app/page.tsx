@@ -1,15 +1,22 @@
-import { type FC } from "react";
+import { HelloUniverseLabel } from "@/components/hello-universe-label";
 
-const Home: FC = () => {
+type Human = {
+  name: string;
+};
+
+export default function Home() {
+  const human: Human = {
+    name: "masa",
+  };
+
   return (
     <main>
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex h-screen items-center justify-center">
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl font-bold">Hello World</h1>
+          <HelloUniverseLabel />
+          <p>{human.name}</p>
         </div>
       </div>
     </main>
   );
-};
-
-export default Home;
+}
