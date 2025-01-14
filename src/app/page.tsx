@@ -6,7 +6,7 @@ type Human = {
 
 export default function Home() {
   const human: Human = {
-    name: "masa",
+    name: "masahiko",
   };
 
   return (
