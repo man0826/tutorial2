@@ -6,7 +6,7 @@ type Human = {
 
 export default function Home() {
   const human: Human = {
-    name: "masa",
+    name: "masahiko",
   };
 
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <div className="flex h-screen items-center justify-center">
         <div className="flex flex-col items-center">
           <HelloUniverseLabel />
-          <p>{human.name}</p>
+          <p>{human.name}bbbb</p>
         </div>
       </div>
     </main>
